@@ -1,6 +1,5 @@
 package com.bridgelabz;
 
-import java.util.Scanner;
 
 public class MainClass
 {
@@ -8,28 +7,24 @@ public class MainClass
     public static void main(String[] args) 
     {
         System.out.println("************Linked List**********");
-        LinkedList list = new LinkedList();
-        Scanner scanner = new Scanner(System.in);
         int option;
-
+            OperationCall operationCall=new OperationCall();
             System.out.println("Enter the option which operation you want to perform ");
-            System.out.println("1.Add Element in the link list \n2.Add Element at The Start of the Link List ");
-            option = scanner.nextInt();
+            System.out.println("1.Add Element in the link list \n2.Add Element at The Start of the Link List\n3.Add Element at The End of the Link List ");
+            option = operationCall.scanner.nextInt();
             switch (option) 
             {
                 case 1:
                     // Adding element into link list
-                    list.add(70);
-                    list.add(30);
-                    list.add(56);
-                    list.display();
-                    break;
+                    operationCall.add();
+                      break;
                 case 2:
                     //pushing element At the start of the link list
-                    list.push(70);
-                    list.push(30);
-                    list.push(56);
-                    list.display();
+                    operationCall.insertAtStart();
+                    break;
+                case 3:
+                    //pushing element At the start of the link list
+                    operationCall.insertAtEnd();
                     break;
 
                 default:
