@@ -6,8 +6,7 @@ public class LinkedList {
     Node tail;
 
     // Adding element into link list
-
-    public void add(int data) {
+   public void add(int data) {
         Node newNode = new Node(data);
         if (head == null){
             head = newNode;
@@ -17,10 +16,9 @@ public class LinkedList {
             tail.next = newNode;
             tail = newNode;
         }
+   }
 
-    }
-
-    // Displaying Linked List
+  // Displaying element of Linked List
     public void display() {
         Node temp = head;
         while (temp != null){
@@ -41,7 +39,8 @@ public class LinkedList {
             head = newNode;
         }
     }
-
+  
+  //pushing element At the end of the link list
     public void insertAtEnd(int data)
     {
         Node newNode =new Node(data);
