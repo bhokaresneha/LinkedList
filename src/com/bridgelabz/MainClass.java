@@ -5,7 +5,8 @@ import java.util.Scanner;
 public class MainClass
 {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) 
+    {
         System.out.println("************Linked List**********");
         LinkedList list = new LinkedList();
         Scanner scanner = new Scanner(System.in);
@@ -14,7 +15,8 @@ public class MainClass
             System.out.println("Enter the option which operation you want to perform ");
             System.out.println("1.Add Element in the link list \n2.Add Element at The Start of the Link List ");
             option = scanner.nextInt();
-            switch (option) {
+            switch (option) 
+            {
                 case 1:
                     // Adding element into link list
                     list.add(70);
