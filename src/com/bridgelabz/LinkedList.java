@@ -30,7 +30,7 @@ public class LinkedList {
     }
 
     //pushing element At the start of the link list
-    public void push(int data) {
+    public void insertAtStart(int data) {
         Node newNode = new Node(data);
         if (head == null){
             head = newNode;
@@ -41,4 +41,19 @@ public class LinkedList {
             head = newNode;
         }
     }
+
+    public void insertAtEnd(int data)
+    {
+        Node newNode =new Node(data);
+        if(head==null)
+        {
+            head=newNode;
+            tail=newNode;
+        }
+        else{
+            tail.next=newNode;
+            tail=newNode;
+        }
+    }
+
 }
