@@ -28,8 +28,13 @@ public class OperationCall {
         list.display();
 
     }
+    public void insertAfter()
+    {
+        System.out.println("Linked List Before adding element in-between");
+        add();
+        list.insertAfter(70,88);
+        System.out.println("\nLinked List After adding element in-between");
+        list.display();
 
-
-
-
+    }
 }
