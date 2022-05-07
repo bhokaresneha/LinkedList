@@ -86,4 +86,11 @@ public class LinkedList {
         }
     }
 
+    public void pop(){
+        if (head != null){
+            Node temp = head;
+            head = head.next;
+        }
+
+    }
 }

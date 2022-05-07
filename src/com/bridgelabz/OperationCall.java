@@ -37,4 +37,12 @@ public class OperationCall {
         list.display();
 
     }
+    public void pop()
+    {
+        System.out.println("Linked List Before removing First element ");
+        add();
+        list.pop();
+        System.out.println("\nLinked List After removing First element ");
+        list.display();
+    }
 }
