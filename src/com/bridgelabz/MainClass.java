@@ -9,7 +9,7 @@ public class MainClass
         int option;
             OperationCall operationCall=new OperationCall();
             System.out.println("Enter the option which operation you want to perform ");
-            System.out.println("1.Add Element in the link list \n2.Add Element at The Start of the Link List\n3.Add Element at The End of the Link List \n4.Insert Element In-Between Elements  ");
+            System.out.println("1.Add Element in the link list \n2.Add Element at The Start of the Link List\n3.Add Element at The End of the Link List \n4.Insert Element In-Between Elements\n5.Remove the first Element From Linked List  ");
             option = operationCall.scanner.nextInt();
             switch (option) {
                 case 1:
@@ -27,8 +27,12 @@ public class MainClass
                 case 4:
                     operationCall.insertAfter();
                     break;
+                case 5:
+                    operationCall.pop();
+                    break;
                 default:
                     System.out.println("Invalid Choice");
+
             }
     }
 }
