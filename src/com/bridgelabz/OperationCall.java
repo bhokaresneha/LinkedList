@@ -45,4 +45,13 @@ public class OperationCall {
         System.out.println("\nLinked List After removing First element ");
         list.display();
     }
+    public void popLastElement()
+    {
+        System.out.println("Linked List Before removing Last element ");
+        add();
+        list.popLastElement();
+        System.out.println("\nLinked List After removing Last element ");
+        list.display();
+    }
+
 }

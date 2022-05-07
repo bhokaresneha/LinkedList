@@ -62,10 +62,13 @@ public class LinkedList {
 
         Node temp = head;
         while(temp != null){
-            if(temp.data == data) {
+            if(temp.data == data)
+            {
                 return temp;
+
             }
             temp = temp.next;
+
         }
         return null;
     }
@@ -86,11 +89,26 @@ public class LinkedList {
         }
     }
 
-    public void pop(){
+    // Deleting First Element of Linked List
+    public void pop()
+    {
         if (head != null){
             Node temp = head;
             head = head.next;
         }
-
     }
+
+    //Deleting Last Element Of Linked List
+    public  void popLastElement()
+    {
+        Node temp = head;
+        Node prevNode = null;
+        while (temp.next != null)
+        {
+            prevNode = temp;
+            temp = temp.next;
+        }
+        prevNode.next = null;
+    }
+
 }
