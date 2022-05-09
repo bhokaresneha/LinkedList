@@ -11,5 +11,18 @@ public class Stack {
         list.add(30);
         list.add(56);
         list.display();
+
+        System.out.println("************UC2***********");
+        System.out.println("Size:: "+list.size());
+        System.out.println("Befor pop operation stack:");
+        list.display();
+        while(list.size() != 0){
+            list.pop();
+        }
+        System.out.println("\nAfter pop operation:");
+        list.display();
+        System.out.println("\nThe Stack is empty....");
+
     }
-}
+    }
+
