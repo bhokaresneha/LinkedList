@@ -54,4 +54,11 @@ public class OperationCall {
         list.display();
     }
 
+    public  void search(){
+        add();
+
+        list.search(88);
+
+    }
+
 }
