@@ -82,7 +82,8 @@ public class LinkedList {
         if( searchedNode!= null){
             // next element of serched node is stored in tempNode variable
             Node tempNode = searchedNode.next;
-            // new node assigned to serched nodes next  position
+
+           // new node assigned to serched nodes next  position
             searchedNode.next = newNode;
             // Assigning next elemnet of searched node to the new one next
             newNode.next = tempNode;
@@ -112,3 +113,4 @@ public class LinkedList {
     }
 
 }
+
